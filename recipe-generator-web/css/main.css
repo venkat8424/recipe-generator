@@ -1,0 +1,55 @@
+body{
+    background-color: #f8f9fa;
+}
+
+div.header{
+    text-align: center;
+    padding: 20px;
+}
+
+nav label{
+    font-size: 1.2rem;
+}
+
+.custom-checkbox{
+    display: inline-block;
+    margin: 7px;
+}
+
+.getRecipeBtnWrapper{
+    margin: 10px;
+}
+
+.getRecipeBtn{
+    background-color: red;
+    color: white;
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+
+.viewRecipeBtn{
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+    float: right;
+}
+
+.recipesHeader{
+    font-size: 2rem;
+}
+
+div.card{
+    margin: 10px;
+    float: left;
+}
+
+div.imgContainer{
+    width: 350px;
+    height: 265px;
+}
+
+img.recipeImg{
+    width: 100%;
+    height: 100%;
+}

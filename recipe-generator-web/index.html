@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <title>Recipe Generator</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="header">
+            <h1 class="display-4">Find Your Recipe</h1>
+        </div>
+        
+        <div class="row">
+            <!-- Ingredients categories -->
+            <div class="col-md-12 col-lg-4">
+                
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <label>Dairy</label>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dairyList" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" value="dairy" onclick="dropDownClicked(this)">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div class="collapse" id="dairyList">
+                        <div class="bg-light p-4">
+                            <div id="dairyIngredients"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <label>Meat</label>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#meatList" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" value="meat" onclick="dropDownClicked(this)">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div class="collapse" id="meatList">
+                        <div class="bg-light p-4">
+                            <div id="meatIngredients"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <label>Vegetables</label>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#vegetableList" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" value="vegetables" onclick="dropDownClicked(this)">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div class="collapse" id="vegetableList">
+                        <div class="bg-light p-4">
+                            <div id="vegetableIngredients"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <label>Fruits</label>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fruitList" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" value="fruits" onclick="dropDownClicked(this)">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div class="collapse" id="fruitList">
+                        <div class="bg-light p-4">
+                            <div id="fruitIngredients"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <label>Fish</label>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fishList" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" value="fish" onclick="dropDownClicked(this)">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div class="collapse" id="fishList">
+                        <div class="bg-light p-4">
+                            <div id="fishIngredients"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <label>Seafood</label>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#seafoodList" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" value="seafood" onclick="dropDownClicked(this)">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div class="collapse" id="seafoodList">
+                        <div class="bg-light p-4">
+                            <div id="seafoodIngredients"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <label>Spices</label>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#spiceList" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" value="spices" onclick="dropDownClicked(this)">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div class="collapse" id="spiceList">
+                        <div class="bg-light p-4">
+                            <div id="spiceIngredients"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <label>Condiments</label>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#condimentsList" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" value="condiments" onclick="dropDownClicked(this)">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div class="collapse" id="condimentsList">
+                        <div class="bg-light p-4">
+                            <div id="condimentsIngredients"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <label>Nuts</label>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nutsList" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" value="nuts" onclick="dropDownClicked(this)">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div class="collapse" id="nutsList">
+                        <div class="bg-light p-4">
+                            <div id="nutsIngredients"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <label>Sweeteners</label>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sweetenersList" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" value="sweeteners" onclick="dropDownClicked(this)">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div class="collapse" id="sweetenersList">
+                        <div class="bg-light p-4">
+                            <div id="sweetenersIngredients"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pos-f-t">
+                    <nav class="navbar navbar-light bg-light">
+                        <label>Baking and Grains</label>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bakingAndGrainsList" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" value="baking and grains" onclick="dropDownClicked(this)">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                    <div class="collapse" id="bakingAndGrainsList">
+                        <div class="bg-light p-4">
+                            <div id="bakingAndGrainsIngredients"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="getRecipeBtnWrapper">
+                    <button type="button" class="btn btn-lg getRecipeBtn" onclick="getRecipe()">Get Recipes</button>
+                </div>
+            </div>
+            
+            <!-- Recipes -->
+            <div id="recipesCol" class="col-md-12 col-lg-8">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
