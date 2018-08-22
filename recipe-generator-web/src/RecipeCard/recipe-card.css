@@ -1,0 +1,22 @@
+div.card{
+    width: 22rem;
+    margin: 10px;
+    float: left;
+}
+
+div.imgContainer{
+    width: 350px;
+    height: 265px;
+}
+
+img.recipeImg{
+    width: 100%;
+    height: 100%;
+}
+
+.viewRecipeBtn{
+    background-color: red;
+    color: white;
+    margin-left: 10px;
+    float: right;
+}
